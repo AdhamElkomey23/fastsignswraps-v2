@@ -32,11 +32,11 @@ export function Navbar() {
           <div className="hidden md:flex space-x-8 items-center">
             {links.map((link) => (
               <Link
-                key={link.href}
+                key={link.label}
                 href={link.href}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary uppercase tracking-widest relative py-1",
-                  location === link.href ? "text-primary after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:shadow-[0_0_8px_hsl(var(--primary))]" : "text-muted-foreground"
+                  location === link.href && link.href !== "#" ? "text-primary after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:shadow-[0_0_8px_hsl(var(--primary))]" : "text-muted-foreground"
                 )}
               >
                 {link.label}
@@ -65,12 +65,12 @@ export function Navbar() {
           <div className="px-4 pt-2 pb-6 space-y-4">
             {links.map((link) => (
               <Link
-                key={link.href}
+                key={link.label}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
                   "block px-3 py-2 text-base font-bold uppercase tracking-wider rounded-md",
-                  location === link.href ? "bg-primary/10 text-primary border-l-4 border-primary" : "text-foreground hover:bg-secondary/50"
+                  location === link.href && link.href !== "#" ? "bg-primary/10 text-primary border-l-4 border-primary" : "text-foreground hover:bg-secondary/50"
                 )}
               >
                 {link.label}
