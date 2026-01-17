@@ -1,12 +1,9 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
-import { ContactSection } from "@/components/ContactSection";
 import { useProjects } from "@/hooks/use-projects";
 import { ProjectCard } from "@/components/ProjectCard";
-import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { ArrowRight, Palette, PenTool, Monitor } from "lucide-react";
+import { Palette, PenTool, Monitor } from "lucide-react";
 
 export default function Home() {
   const { data: projects, isLoading } = useProjects();
@@ -76,11 +73,6 @@ export default function Home() {
             </h2>
             <div className="h-1 w-20 bg-primary rounded-full mt-4" />
           </div>
-          <Link href="/portfolio">
-            <Button variant="ghost" className="hidden sm:flex text-primary hover:text-primary/80 hover:bg-primary/10">
-              VIEW ALL PROJECTS <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-          </Link>
         </div>
 
         {isLoading ? (
@@ -97,34 +89,20 @@ export default function Home() {
           </div>
         )}
 
-        <div className="mt-12 text-center sm:hidden">
-          <Link href="/portfolio">
-            <Button className="w-full bg-secondary hover:bg-secondary/80">
-              VIEW ALL PROJECTS
-            </Button>
-          </Link>
-        </div>
       </section>
-
-      <ContactSection />
 
       {/* CTA Section */}
       <section className="py-24 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-cyan-400 opacity-90" />
-        
+
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-display font-bold text-background mb-6">
             READY TO STAND OUT?
           </h2>
-          <p className="text-background/80 text-xl font-medium mb-8 max-w-2xl mx-auto">
+          <p className="text-background/80 text-xl font-medium max-w-2xl mx-auto">
             Your vehicle is a blank canvas. Let's create something that turns heads at every stoplight.
           </p>
-          <Link href="/contact">
-            <Button size="lg" className="bg-background text-primary hover:bg-background/90 font-bold px-10 h-16 text-lg shadow-xl">
-              GET YOUR CUSTOM DESIGN
-            </Button>
-          </Link>
         </div>
       </section>
 
