@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 
 export function Hero() {
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden clip-diagonal pb-20">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden clip-diagonal">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40 z-10" />
@@ -17,7 +17,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
