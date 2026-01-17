@@ -24,31 +24,31 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-block px-4 py-1 mb-6 border border-primary/30 rounded-full bg-primary/10 backdrop-blur-sm">
-              <span className="text-primary font-bold tracking-widest text-sm uppercase">Premium Design Agency</span>
+            <div className="inline-block px-3 py-0.5 mb-4 border border-primary/30 rounded-full bg-primary/10 backdrop-blur-sm">
+              <span className="text-primary font-bold tracking-widest text-xs uppercase">Premium Design Agency</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl md:text-6xl font-display font-bold text-white leading-tight mb-4">
               TRANSFORM YOUR <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600 text-glow">
                 VISION
               </span> INTO REALITY
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg font-light">
+            <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-md font-light">
               We create custom, high-impact designs for commercial fleets, color changes, and exotic vehicles. 
-              <strong className="text-white font-semibold block mt-2">Design Only. No Print. No Install. Just Art.</strong>
+              <strong className="text-white font-semibold block mt-1">Design Only. No Print. No Install. Just Art.</strong>
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/portfolio">
-                <Button size="lg" className="bg-primary text-background hover:bg-primary/90 hover:scale-105 transition-all duration-300 font-bold px-8 h-14 text-lg shadow-[0_0_20px_hsl(var(--primary)/0.4)]">
+                <Button size="default" className="bg-primary text-background hover:bg-primary/90 hover:scale-105 transition-all duration-300 font-bold px-6 h-11 text-base shadow-[0_0_20px_hsl(var(--primary)/0.4)]">
                   VIEW PORTFOLIO
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="border-white/20 hover:bg-white/10 hover:border-white text-white font-semibold px-8 h-14 text-lg">
-                  START A PROJECT <ChevronRight className="ml-2 h-5 w-5" />
+                <Button variant="outline" size="default" className="border-white/20 hover:bg-white/10 hover:border-white text-white font-semibold px-6 h-11 text-base">
+                  START A PROJECT <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
