@@ -20,11 +20,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0 flex items-center group cursor-pointer">
+          <Link href="/" className="flex-shrink-0 flex items-center group cursor-pointer ml-4">
             <img 
               src={logo} 
               alt="Fast Signs & Wraps" 
-              className="h-16 w-auto transition-transform group-hover:scale-105" 
+              className="h-20 w-auto transition-transform group-hover:scale-105" 
             />
           </Link>
 
