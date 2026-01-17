@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
 import { useProjects } from "@/hooks/use-projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
@@ -34,6 +35,7 @@ export default function Home() {
     <div className="min-h-screen bg-background font-body">
       <Navbar />
       <Hero />
+      <About />
       
       {/* Services Section */}
       <section className="py-24 bg-card relative overflow-hidden">
