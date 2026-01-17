@@ -1,7 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { api, type InsertInquiry } from "@shared/routes";
 
-export function useCreateInquiry() {
+export function useInquiries() {
   return useMutation({
     mutationFn: async (data: InsertInquiry) => {
       const res = await fetch(api.inquiries.create.path, {

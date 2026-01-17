@@ -5,14 +5,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertInquirySchema, type InsertInquiry } from "@shared/schema";
-import { useCreateInquiry } from "@/hooks/use-inquiries";
+import { useInquiries } from "@/hooks/use-inquiries";
 import { useToast } from "@/hooks/use-toast";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Loader2, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   const { toast } = useToast();
-  const mutation = useCreateInquiry();
+  const mutation = useInquiries();
 
   const form = useForm<InsertInquiry>({
     resolver: zodResolver(insertInquirySchema),
