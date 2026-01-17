@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
+import { ContactSection } from "@/components/ContactSection";
 import { useProjects } from "@/hooks/use-projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
@@ -104,6 +105,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <ContactSection />
 
       {/* CTA Section */}
       <section className="py-24 bg-primary relative overflow-hidden">
