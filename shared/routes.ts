@@ -1,5 +1,7 @@
 import { z } from 'zod';
-import { insertProjectSchema, insertInquirySchema, projects, inquiries } from './schema';
+import { insertProjectSchema, insertInquirySchema, projects, inquiries, type InsertProject, type InsertInquiry } from './schema';
+
+export type { InsertProject, InsertInquiry };
 
 export const errorSchemas = {
   validation: z.object({

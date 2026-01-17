@@ -67,7 +67,7 @@ export async function registerRoutes(
     await storage.createProject({
       title: "Cyberpunk GT-R Itasha",
       description: "Custom designed full wrap featuring high-detail anime character art.",
-      imageUrl: "https://images.unsplash.com/photo-1626245366367-727a810d2966?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
       category: "Itasha"
     });
     await storage.createProject({
