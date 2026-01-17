@@ -3,6 +3,7 @@ import logo from "@assets/614861261_1188486870141866_8515750531569483211_n_17686
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -41,6 +42,9 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <Button variant="default" className="bg-primary text-background font-bold hover:bg-primary/90 hover:shadow-[0_0_15px_hsl(var(--primary)/0.5)] transition-all cursor-default">
+              GET A QUOTE
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,6 +76,11 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <div className="pt-4">
+              <Button className="w-full bg-primary text-background font-bold h-12 cursor-default">
+                GET A QUOTE
+              </Button>
+            </div>
           </div>
         </div>
       )}
